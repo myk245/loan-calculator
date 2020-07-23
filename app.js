@@ -26,10 +26,24 @@ function calculateResults(event) {
       totalPayment.value = (monthly * calculatedPayments).toFixed(2); 
       totalInterest.value = ((monthly * calculatedPayments) - principal).toFixed(2);
    } else {
-      console.log("Please check your numbers.")
+      showError("Please check your numbers.")
    }
 
    event.preventDefault();
+}
+
+function showError(error) {
+   // create a div
+   const errorDiv = document.createElement("div");
+   errorDiv.className = "alert alert-danger";
+
+   errorDiv.innerText = error; 
+
+   const card = document.querySelector(".card");
+   const heading = document.querySelector(".heading"); 
+
+   // insert error above heading 
+   card.insertBefore(errorDiv, heading);
 }
 
 
