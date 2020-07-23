@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-   <title>Hello, world!</title>
+   <title>Loan Calculator</title>
 </head>
 
 <body class="bg-dark">
@@ -22,15 +22,30 @@
                <form id="loan-form">
                   <div class="form-group">
                      <div class="input-group">
-                        <span class="input-group-addon">$</span>
+                        <span class="input-group-text">$</span>
                         <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
                      </div>
                   </div>
+
+                  <div class="form-group">
+                     <div class="input-group">
+                        <span class="input-group-text">%</span>
+                        <input type="number" class="form-control" id="interest" placeholder="Interest">
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <input type="number" class="form-control" id="years" placeholder="Years to Repay">
+                  </div>
+
                </form>
+
+
             </div>
          </div>
       </div>
    </div>
+
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
