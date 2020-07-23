@@ -45,8 +45,7 @@ function calculateResults() {
    } else {
       showError("Please check your numbers.")
    }
-
-}
+}; 
 
 function showError(error) {
    // hide results
@@ -69,10 +68,10 @@ function showError(error) {
 
    // clear error after 3 seconds 
    setTimeout(clearError, 3000); 
-}
+};
 
 function clearError() {
    document.querySelector(".alert").remove(); 
-}
+};
 
 
