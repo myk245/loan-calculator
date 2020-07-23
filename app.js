@@ -6,6 +6,7 @@ document.getElementById("loan-form").addEventListener("submit", function(event) 
    // show loader 
    document.getElementById("loading").style.display = "block";
 
+   // after 2 seconds, calculate results
    setTimeout(calculateResults, 2000); 
 
    event.preventDefault();
